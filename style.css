@@ -179,10 +179,10 @@ body {
 .grid {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
-  grid-template-areas: "imagen1 imagen2 imagen3" "titulo1 titulo2 titulo3";
+  grid-template-areas: "imagen1 texto1" "texto2 imagen2" "imagen3 texto3";
 
   padding: 0.5rem;
   gap: 0.5rem;
@@ -197,26 +197,23 @@ body {
 }
 
 .item2 {
-  grid-area: imagen2;
+  grid-area: texto1;
 }
 
 .item3 {
-  grid-area: imagen3;
+  grid-area: texto2;
 }
 
 .item4 {
-  grid-area: titulo1;
-  color: #4d4d4d;
+  grid-area: imagen2;
 }
 
 .item5 {
-  grid-area: titulo2;
-  color: #4d4d4d;
+  grid-area: imagen3;
 }
 
 .item6 {
-  grid-area: titulo3;
-  color: #4d4d4d;
+  grid-area: texto3;
 }
 
 /* Form */
@@ -243,12 +240,12 @@ body {
   transform: scale(1.1);
   transition: all 0.3s;
 }
-.item2:hover {
+.item4:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s;
 }
-.item3:hover {
+.item5:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.3s;
