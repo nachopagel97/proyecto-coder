@@ -198,10 +198,12 @@ body {
 
 .item2 {
   grid-area: texto1;
+  color: #4d4d4d;
 }
 
 .item3 {
   grid-area: texto2;
+  color: #4d4d4d;
 }
 
 .item4 {
@@ -214,6 +216,7 @@ body {
 
 .item6 {
   grid-area: texto3;
+  color: #4d4d4d;
 }
 
 /* Form */
